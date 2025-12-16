@@ -1,0 +1,19 @@
+# Text-to-Speech (TTS) - Basic (lightweight, API-based)
+
+# Language detection utilities
+fasttext
+langid
+
+# Number to words conversion
+num2words
+
+# API-based TTS (requires internet)
+gTTS  # Google TTS
+edge-tts  # Microsoft Edge TTS
+
+# System TTS
+pyttsx3  # Cross-platform TTS wrapper
+
+# Note: espeak-ng must be installed separately via system package manager:
+# macOS: brew install espeak-ng
+# Ubuntu: sudo apt-get install espeak-ng

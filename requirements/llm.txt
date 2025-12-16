@@ -1,0 +1,10 @@
+# LLM and Language Processing dependencies
+
+# LangChain ecosystem
+langchain
+langchain-core
+langchain-openai
+langchain-community
+
+# Embeddings and semantic search
+sentence-transformers

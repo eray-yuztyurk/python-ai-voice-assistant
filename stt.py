@@ -2,7 +2,7 @@
 Speech-to-Text (STT) Inference Module
 """
 from transformers import pipeline
-from config.ai_model_names import transformers_whisper_stt_models, faster_whisper_tts_models, tts_models
+from config.ai_model_names import transformers_whisper_stt_models, faster_whisper_stt_models, stt_models
 from faster_whisper import WhisperModel
 import gradio as gr
 
@@ -17,6 +17,7 @@ def load_stt_transformers_model(model_name):
     Returns:
         pipeline: The loaded STT pipeline.
     """
+
     if model_name in stt_transformers_loaded_models:
         pipeline_stt = stt_transformers_loaded_models[model_name]
         return pipeline_stt
@@ -40,6 +41,7 @@ def load_stt_faster_whisper_model(model_name):
     Returns:
         WhisperModel: The loaded Faster-Whisper model.
     """
+
     if model_name in stt_faster_whisper_loaded_models:
         model = stt_faster_whisper_loaded_models[model_name]
         return model
@@ -99,14 +101,15 @@ def stt_inference(model_name, audio_file_path):
         return stt_faster_whisper_inference(model_name, audio_file_path)
     else:
         return stt_transformers_inference(model_name, audio_file_path)
-    
+
+"""   
 ####################################################################################################
 # Gradio Interface (delete later when frontend is prepared)
 _ui = gr.Interface(
     fn=stt_inference,
     inputs=[
         gr.Dropdown(
-            choices=list(tts_models.keys()),
+            choices=list(stt_models.keys()),
             label="Model Type",
             value="Faster-Whisper - Base"
         ),
@@ -116,10 +119,9 @@ _ui = gr.Interface(
         gr.Textbox(label="Text", lines=15, max_lines=40),
     ],
     title="🎤 Audio Transcriber 📝",
-    description="""
-                Transcribe your audio files into text using Whisper models.
-                """
+    description="Transcribe your audio files into text using Whisper models."
 )
 
 _ui.launch(server_name="0.0.0.0", server_port=7860, inbrowser=True)
 ####################################################################################################
+"""

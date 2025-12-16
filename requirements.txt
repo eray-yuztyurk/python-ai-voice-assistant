@@ -1,18 +1,41 @@
-# stt libraries
+# ===== ACTIVE - STT (stt.py çalışıyor) =====
 transformers
 torch
+accelerate
 soundfile
-num2words
+librosa
 faster-whisper
+scipy  # for audio file I/O in app.py
 
-langchain
-langchain-core
-langchain-openai
-langchain-community
-sentence-transformers
-#lang-detect
+# ===== ACTIVE - TTS (tts.py fallback) =====
+fasttext  # Optional: C++ binding issues on some macOS, falls back to langid
+langid
+gTTS
+edge-tts
 
-
-
-# temp ui
+# ===== ACTIVE - UI =====
 gradio==4.14.0
+
+# ===== ACTIVE - LLM (llm.py çalışıyor) =====
+python-dotenv
+langchain-huggingface
+langchain-groq
+langchain-google-genai
+
+# ===== COMMENTED OUT (Kullanılmıyor) =====
+# langchain
+# langchain-core
+# langchain-community
+# sentence-transformers
+
+# Ağır TTS kütüphaneleri (fallback'te yok)
+# num2words
+# scipy
+# encodec
+# piper-tts  # subprocess kullanıyoruz
+# TTS  # Coqui TTS - çok ağır
+# numpy
+# pyttsx3
+
+# System TTS
+# brew install espeak-ng

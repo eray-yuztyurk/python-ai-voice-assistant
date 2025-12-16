@@ -1,0 +1,13 @@
+# Complete installation - all features
+# This installs everything, use for development or full deployment
+
+-r requirements-core.txt
+-r requirements-stt.txt
+-r requirements-tts-basic.txt
+-r requirements-tts-advanced.txt
+-r requirements-llm.txt
+
+# Development tools (optional)
+# pytest
+# black
+# mypy

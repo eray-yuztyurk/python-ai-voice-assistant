@@ -1,0 +1,11 @@
+# Speech-to-Text (STT) dependencies
+
+# Transformers-based STT
+transformers
+torch
+accelerate
+soundfile
+librosa
+
+# Faster-Whisper STT (optimized)
+faster-whisper

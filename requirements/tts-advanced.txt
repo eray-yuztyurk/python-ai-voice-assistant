@@ -1,0 +1,16 @@
+# Text-to-Speech (TTS) - Advanced (heavy, local models)
+
+# Transformers-based TTS (SpeechT5, MMS, Parler, Bark)
+transformers
+torch
+scipy
+encodec
+
+# Piper TTS (fast, efficient)
+piper-tts
+
+# Coqui TTS (high quality, voice cloning)
+TTS
+
+# Sentence transformers (for some TTS models)
+sentence-transformers
