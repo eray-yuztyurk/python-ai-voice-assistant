@@ -47,7 +47,7 @@ def load_stt_faster_whisper_model(model_name):
         return model
     
     else:
-        model_id = faster_whisper_tts_models.get(model_name)
+        model_id = faster_whisper_stt_models.get(model_name)
         model = WhisperModel(model_id)
 
         stt_faster_whisper_loaded_models[model_name] = model
@@ -101,27 +101,3 @@ def stt_inference(model_name, audio_file_path):
         return stt_faster_whisper_inference(model_name, audio_file_path)
     else:
         return stt_transformers_inference(model_name, audio_file_path)
-
-"""   
-####################################################################################################
-# Gradio Interface (delete later when frontend is prepared)
-_ui = gr.Interface(
-    fn=stt_inference,
-    inputs=[
-        gr.Dropdown(
-            choices=list(stt_models.keys()),
-            label="Model Type",
-            value="Faster-Whisper - Base"
-        ),
-        gr.Audio(label="Audio", sources=["upload"], type="filepath"),
-        ],
-    outputs=[
-        gr.Textbox(label="Text", lines=15, max_lines=40),
-    ],
-    title="🎤 Audio Transcriber 📝",
-    description="Transcribe your audio files into text using Whisper models."
-)
-
-_ui.launch(server_name="0.0.0.0", server_port=7860, inbrowser=True)
-####################################################################################################
-"""

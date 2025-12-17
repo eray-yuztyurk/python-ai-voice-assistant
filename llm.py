@@ -144,38 +144,3 @@ def chat_with_llm(user_message, chat_model=None):
     except Exception as e:
         return f"❌ Error: {e}"
 
-
-"""
-#######################################################################################################
-if __name__ == "__main__":
-    import gradio as gr
-
-    # Initialize model once at startup
-    print("🔄 Initializing LLM...")
-    llm_model = llm_initializer_with_fallback()
-
-    def chatbot_interface(message, history):
-        ""Gradio chatbot interface with conversation history""
-        response = chat_with_llm(message, llm_model)
-        return response
-
-    # Gradio UI
-    demo = gr.ChatInterface(
-        fn=chatbot_interface,
-        title="NeeverStopTalking LLM Chatbot",
-        description="Ask me anything!",
-        examples=[
-            "Hello! How are you?",
-            "What is Python?",
-            "Explain machine learning in simple terms",
-            "Merhaba, nasılsın?"
-        ],
-        theme="soft",
-        retry_btn=None,
-        undo_btn="🔙 Undo",
-        clear_btn="🗑️ Clear",
-    )
-
-    demo.launch(server_name="0.0.0.0", server_port=7862, inbrowser=True)
-
-"""
