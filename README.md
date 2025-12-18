@@ -2,6 +2,14 @@
 
 A voice-enabled AI chatbot with automatic fallback mechanisms for reliability. Talk or type, get intelligent responses with voice output.
 
+---
+
+<p align="center">
+  <img width="2540" height="896" alt="image" src="https://github.com/user-attachments/assets/7ee4f469-37e6-482a-bc5c-1edd56eabfb2" />
+</p>
+
+---
+
 ## What It Does
 
 - **Voice Input**: Record your voice → automatic transcription (Faster-Whisper Base model)
@@ -14,8 +22,8 @@ A voice-enabled AI chatbot with automatic fallback mechanisms for reliability. T
 
 1. Clone and install:
 ```bash
-git clone https://github.com/eray-yuztyurk/python-ai-voice-assistant.git
-cd python-ai-voice-assistant
+git clone https://github.com/eray-yuztyurk/python-ai-voice-chatbot.git
+cd python-ai-voice-chatbot
 pip install -r requirements.txt
 ```
 
