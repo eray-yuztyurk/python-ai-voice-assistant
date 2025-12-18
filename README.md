@@ -96,7 +96,8 @@ AUDIO_INPUT_DIR=./data/audio/input_audio
 <tr>
 <th>Core Technologies</th>
 <th>AI/ML Frameworks</th>
-<th>APIs & Services</th>
+<th>LLM APIs</th>
+<th>Speech Services</th>
 </tr>
 <tr>
 <td>
@@ -104,26 +105,36 @@ AUDIO_INPUT_DIR=./data/audio/input_audio
 ![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=flat&logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
 ![Gradio](https://img.shields.io/badge/Gradio-FF7C00?style=flat&logo=gradio&logoColor=white)
+![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?style=flat&logo=scipy&logoColor=white)
 
 </td>
 <td>
 
 ![LangChain](https://img.shields.io/badge/LangChain-121212?style=flat)
-![Transformers](https://img.shields.io/badge/Transformers-yellow?style=flat)
+![Transformers](https://img.shields.io/badge/🤗_Transformers-yellow?style=flat)
 ![Faster Whisper](https://img.shields.io/badge/Faster_Whisper-blue?style=flat)
+![fasttext](https://img.shields.io/badge/fastText-gray?style=flat)
+![langid](https://img.shields.io/badge/langid-gray?style=flat)
 
 </td>
 <td>
 
-![Groq](https://img.shields.io/badge/Groq-F55036?style=flat)
+![Groq](https://img.shields.io/badge/Groq_API-F55036?style=flat)
 ![Gemini](https://img.shields.io/badge/Gemini-4285F4?style=flat&logo=google&logoColor=white)
+![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat&logo=huggingface&logoColor=black)
+
+</td>
+<td>
+
 ![Edge TTS](https://img.shields.io/badge/Edge_TTS-00A4EF?style=flat)
+![gTTS](https://img.shields.io/badge/gTTS-4285F4?style=flat&logo=google&logoColor=white)
+![Piper](https://img.shields.io/badge/Piper_TTS-green?style=flat)
 
 </td>
 </tr>
 </table>
 
-**Dependencies:** faster-whisper, transformers, torch, langchain-groq, langchain-google-genai, langchain-huggingface, edge-tts, gTTS, fasttext, langid, gradio, scipy, python-dotenv
+**Dependencies:** python-dotenv, scipy, transformers, torch, faster-whisper, langid, fasttext, gTTS, edge-tts, piper-tts, langchain-huggingface, langchain-groq, langchain-google-genai, gradio
 
 ## Troubleshooting
 

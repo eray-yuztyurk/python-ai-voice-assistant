@@ -12,6 +12,7 @@ langid
 fasttext
 gTTS
 edge-tts
+piper-tts
 
 # Large Language Models (LLM)
 langchain-huggingface
