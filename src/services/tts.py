@@ -16,7 +16,12 @@ def tts_converter_with_fallback(file_output_name, text_input):
         str: Path to generated audio file
     """
     lang_code = detect_text_language(text_input)
-    
+
+    try:
+        os.makedirs(AUDIO_OUTPUT_DIR, exist_ok=True)
+    except Exception as _:
+        pass
+        
     try:
         import edge_tts
         import asyncio
